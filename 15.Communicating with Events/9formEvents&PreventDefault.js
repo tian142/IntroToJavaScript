@@ -10,6 +10,7 @@ const veggieSelect = document.querySelector('#veggie');
 
 form.addEventListener('submit', function (e) {
     alert('submitted');
+    console.log('ThisIsTarget', e.target);
     console.log('cc', creditCardInput.value);
     console.log('terms', termBox.checked);
     console.log('veggie selected:', veggieSelect.value);

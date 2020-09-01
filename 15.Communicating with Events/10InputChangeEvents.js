@@ -1,7 +1,6 @@
 // input and change events
 // input tracks changes as soon as it happen.
-//e.target has all the details
-
+//e.target shows the tag and its attributes
 const form = document.querySelector('#signup-form');
 const creditCardInput = document.querySelector('#cc');
 const termBox = document.querySelector('#term');
