@@ -1,0 +1,10 @@
+.todo {
+    font-style: 30px;
+    color: olive;
+}
+
+.done {
+    color: greenyellow;
+    text-decoration: line-through;
+    opacity: 70%;
+}

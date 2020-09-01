@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        .myBody {
+            font-family: Arial, Helvetica, sans-serif;    
+            background-color: #363636;
+            color:white;
+        }
+        .header {
+            color:Pink;
+        }
+        a:link {
+        color: green;
+        text-decoration: none;
+        }
+        a:visited {
+        color: pink;
+        text-decoration: none;
+        }
+        a:hover {
+        color: red;
+        text-decoration: underline;
+        }
+        figure {
+            float:left;
+            margin: 3px 10px 0px 2px;
+        }
+        footer {
+            color:#cccccc;
+        }
+    </style>
+</head>
+
+<body class='myBody'>
+    <main>
+        <article>
+            
+            <header class='header'>
+                <hgroup>
+                    <h1>Tian Qiu</h1>
+                    <h3>Studnet at MakeSchool</h3>
+                </hgroup>
+            </header>
+            
+            <hr>
+            
+            <section>
+                <h3>Skills</h3>
+                <ul>
+                    <li><abbr>HTML</abbr></li>
+                    <li class='special'><abbr>CSS</abbr></li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>        
+            
+            <section>
+                <h4>About Tian:</h4>
+                    <figure>
+                        <img id='myPicture' src="https://lh3.googleusercontent.com/pw/ACtC-3dsxsqYyZESvi7l08pfm-QXtFn0_goSzLa1wcdfNnfwUx5u95IVjeFI-5X1eMt2_a-EODEI4HLNuXpxWu8N_6hCPHvzazU_sEPQLHvsqYrctauaYHmQDEHJnJe6wmetNFbTg4WNNYp-l-ZrafGaccfv=w978-h1447-no?authuser=1" alt="Profile Picture" width="110">
+                    </figure>
+                <p id='main'>Tian is a value-driven computer science student at MakeSchool. Tian was previously an auditor with an accounting degree <br>from the University of California, Santa Barbara<abbr>(UCSB)</abbr>. Throughout his time studying and working in the accounting industry,<br> Tian realized that he has several ideas that could solve frequent problems in his life and the lives of people around him.  Tian<br> was(and still is) excited to bring his ideas to life. However, he was not able to work on them due to a lack of coding skills and<br> working at a demanding day job.
+                <script>console.log('script from main paragraph')</script></p> 
+
+                <p>After five months of working as an auditor, Tian decided that he would go back to school to pursue what he found could bring<br> meaning to his life - to create projects and platforms that can solve problems and reduce suffering in the world. Tian recently<br> just started as a junior at MakeSchool and is thrilled to work towards his potential. </p>
+            </section>
+            <hr>
+            <ul id='todos'>
+                <li class='todo'>Shower <button>X</button></li>
+                <li class='todo'>HairCut <button>X</button></li>
+                <li class='todo'>Brush Teeth <button>X</button></li>
+            </ul>
+            <section>
+                <h4>Online Presence:</h4>
+                <nav>
+                    <a href="https://www.linkedin.com/in/tian-qiu-91bb8a127/"  target="_blank">LinkedIn</a></li>|
+                    <a href="https://github.com/tian142"  target="_blank">GitHub</a></li>|
+                    <a href="https://www.instagram.com/tian142142/" target="_blank">Instagram</a></li>
+                </nav>
+            </section>
+            <h4>Contact:</h4>
+            <form>
+                <input type="text" placeholder ='leave a message' name="" id="">
+                <input type="text" placeholder="name">
+                <input type="range" min="100" max='500' name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="submit">
+            </form>
+            <footer>
+                <h6>Copyright © 2020 MakeSchool PBC. All Rights Reserved</h6>
+            </footer>
+
+
+        </article>
+    </main>
+    <script src="9appendPrependInsertBefore.js"></script>
+</body>
+</html>
