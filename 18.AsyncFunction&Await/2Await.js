@@ -9,10 +9,10 @@ getPlanets();
 
 // Without async/await...
 
-// function getPlanets() {
-// 	return axios.get('https://swapi.co/api/planets/');
-// }
+function getPlanets() {
+    return axios.get('https://swapi.co/api/planets/');
+}
 
-// getPlanets().then((res) => {
-// 	console.log(res.data);
-// });
+getPlanets().then((res) => {
+    console.log(res.data);
+});

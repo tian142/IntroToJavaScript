@@ -1,34 +1,36 @@
-// const checkStatusAndParse = (response) => {
-//     if (!response.ok) throw new Error(`Status Code Error: ${response.status}`);
+const checkStatusAndParse = (response) => {
+    if (!response.ok) throw new Error(`Status Code Error: ${response.status}`);
 
-//     return response.json();
-// };
+    return response.json();
+};
 
-// const printPlanets = (data) => {
-//     console.log('Loaded 10 more planets...');
-//     for (let planet of data.results) {
-//         console.log(planet.name);
-//     }
-//     return Promise.resolve(data.next);
-// };
+const printPlanets = (data) => {
+    console.log('Loaded 10 more planets...');
+    for (let planet of data.results) {
+        console.log(planet.name);
+    }
+    return Promise.resolve(data.next);
+};
 
-// const fetchNextPlanets = (url = 'https://swapi.dev/api/planets/') => {
-//     return fetch(url);
-// };
+const fetchNextPlanets = (url = 'https://swapi.dev/api/planets/') => {
+    return fetch(url);
+};
 
-// fetchNextPlanets()
-//     .then(checkStatusAndParse)
-//     .then(printPlanets)
-//     .then(fetchNextPlanets)
-//     .then(checkStatusAndParse)
-//     .then(printPlanets)
-//     .then(fetchNextPlanets)
-//     .then(checkStatusAndParse)
-//     .then(printPlanets)
-//     .catch((err) => {
-//         console.log('SOMETHING WENT WRONG WITH FETCH!');
-//         console.log(err);
-//     });
+fetchNextPlanets()
+    .then(checkStatusAndParse)
+    .then(printPlanets)
+    .then(fetchNextPlanets)
+    .then(checkStatusAndParse)
+    .then(printPlanets)
+    .then(fetchNextPlanets)
+    .then(checkStatusAndParse)
+    .then(printPlanets)
+    .catch((err) => {
+        console.log('SOMETHING WENT WRONG WITH FETCH!');
+        console.log(err);
+    });
+
+//^FETCH VS AXIOS------------------------------------------------------------
 
 const fetchNextPlannets = (url = 'https://swapi.dev/api/planets/') => {
     console.log(url);

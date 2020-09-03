@@ -36,15 +36,15 @@ function changeBodyColor(color, delay) {
 }
 
 // IN SEQUENCE
-// async function lightShow() {
-//     await changeBodyColor('teal', 1000);
-//     await changeBodyColor('pink', 1000);
-//     await changeBodyColor('indigo', 1000);
-//     await changeBodyColor('violet', 1000);
-// }
+async function lightShow() {
+    await changeBodyColor('teal', 1000);
+    await changeBodyColor('pink', 1000);
+    await changeBodyColor('indigo', 1000);
+    await changeBodyColor('violet', 1000);
+}
 // IN PARALLEL...
 // Everything is "sent off" at the same time
-async function lightShow() {
+async function lightShow2() {
     const p1 = changeBodyColor('teal', 1000);
     const p2 = changeBodyColor('pink', 1000);
     const p3 = changeBodyColor('indigo', 1000);
