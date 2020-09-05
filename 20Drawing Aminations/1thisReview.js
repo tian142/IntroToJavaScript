@@ -1,3 +1,7 @@
+const durationInput = document.querySelector('#duration');
+const startButton = document.querySelector('#start');
+const pauseButton = document.querySelector('#pause');
+
 class Timer {
     constructor(durationInput, startButton, pauseButton) {
         this.durationInput = durationInput;
@@ -9,6 +13,7 @@ class Timer {
 
     // below, the 'this' refers to the button. Not what we want
     // and if we call this.inportantMethodToCall() from here, it will not be a defined method.
+    // problem arise when we click the button.
     start() {
         console.log(this);
         this.inportantMethodToCall();
@@ -17,10 +22,6 @@ class Timer {
         console.log('important thing is done!');
     }
 }
-
-const durationInput = document.querySelector('#duration');
-const startButton = document.querySelector('#start');
-const pauseButton = document.querySelector('#pause');
 
 const timer = new Timer(durationInput, startButton, pauseButton);
 
